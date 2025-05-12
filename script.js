@@ -10,11 +10,15 @@ class Person{
 	}
 }
 class Employee{
-	super(name,age);
-	this.jobTitle=jobTitle;
+	constructor(name,age,jobTitle)
+	{
+	     super(name,age);
+	     this.jobTitle=jobTitle;
+	}
 	jobGreet(){
 		console.log("Hello, my name is "+this.name+", I am "+this.age+" years old, and my job title is "+this.jobTitle);
     }
+		
 }
 const person=new Person("ALice",25);
 person.greet();
